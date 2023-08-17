@@ -1,5 +1,6 @@
 import React from "react";
-import ProductsData from "./Products"; // Make sure the path is correct
+import data from "../data";
+
 import "./pages.css"; // Make sure the path is correct
 import Products from "./Products";
 
@@ -21,18 +22,9 @@ const Shirts = () => {
         <div className="item1">12</div>
       </div>
 
-      <div className="product-container">
-        <div className="product-grid">
-          {ProductsData.map((product, index) => (
-            <Products
-              key={index}
-              name={product.name}
-              url={product.url}
-              price={product.price}
-            />
-          ))}
-        </div>
-      </div>
+      {data.map((Shirts) => {
+        return <Shirts {...Shirts} key={Shirts.id} />;
+      })}
     </div>
   );
 };

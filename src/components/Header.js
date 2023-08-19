@@ -17,7 +17,11 @@ const Header = () => {
             <Link to="/pants">Pants</Link>
           </li>
           <li className="nav-item">
-            <Link to="/shoes">Shoes</Link>
+            <Link to="/shoes">Shoes </Link>
+            <i
+              className="fa-sharp fa-solid fa-cart-shopping"
+              style={{ marginLeft: "30px", cursor: "pointer", color: "white" }}
+            ></i>
           </li>
         </ul>
       </nav>

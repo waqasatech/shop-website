@@ -1,6 +1,6 @@
 /* Header.css */
 .header {
-  background-color: #333;
+  background-color: #1100fb;
   color: white;
   padding: 10px 0;
 }
@@ -14,11 +14,14 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 4rem;
+  gap: 1rem;
+  font-size: xx-large;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
 }
 
 .nav-item {
-  font-size: 18px;
+  font-size: 30px;
 }
 
 /* Style for navigation links */
@@ -29,5 +32,5 @@
 }
 
 .nav-item a:hover {
-  color: #ff6600; /* Change to your desired hover color */
+  color: #f00000;
 }
